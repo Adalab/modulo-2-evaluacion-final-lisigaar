@@ -130,7 +130,6 @@ function filterProductsByName(searchText) {
     renderCart();
   }
   
-
   function renderProducts(productsList) {
     if (productsList.length === 0) {
       dataProducts.innerHTML = "<li>¡No hay productos!</li>";
@@ -148,6 +147,7 @@ function filterProductsByName(searchText) {
       btn.addEventListener("click", handleAddToCart);
     }
   }
+
   
 
 //EVENTOS
