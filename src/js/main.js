@@ -14,19 +14,6 @@ let cart = [];
 
 //FUNCIONES
 
-function renderOneProducts(oneProducts) {
-  const html = `
-  <li class="products"> 
-    <img
-      src="${oneProducts.image}"
-      alt="Imagen del producto"
-      class="products-image"/>
-    <h3 class="products-title">${oneProducts.title}</h3>
-    <p class="products-price">${oneProducts.price}</p>
-    <button class="btn-add-product-to-cart">Comprar</button>
-  </li> `;
-  return html;
-}
 
 function renderProducts(products) {
   if (products.length === 0) {
