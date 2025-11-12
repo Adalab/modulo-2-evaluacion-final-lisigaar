@@ -31,7 +31,6 @@ Además, guarda los datos del carrito en el **LocalStorage** para mantenerlos tr
 ---
 
 ## 🧠 Tecnologías utilizadas
-
 - **HTML5** – estructura base de la aplicación  
 - **Sass (SCSS)** – estilos y variables de color  
 - **JavaScript (ES6)** – lógica de la app, manejo del DOM y localStorage  
@@ -64,6 +63,22 @@ AdaStore/
 └── /assets (opcional)
 
 ---
+
+## ⚙️ Cómo arrancar el proyecto
+
+1. Clona el repositorio:
+```bash
+git clone <URL-del-repositorio>
+2. Accede a la carpeta del proyecto:
+cd AdaStore
+3.Instala las dependencias (si usas Sass compilado con npm):
+npm install
+4.Compila el Sass a CSS:
+npm run compile:sass
+(O usa la extensión Live Sass Compiler en VS Code)
+5.Abre el proyecto en el navegador:
+Si trabajas localmente: abre index.html con Live Server.
+Si está publicado: visita el enlace de GitHub Pages indicado en la sección About del repositorio.
 
 ## 🧪 API de referencia
 
