@@ -15,18 +15,20 @@ let cart = [];
 //FUNCIONES
 
 
-function renderProducts(products) {
-  if (products.length === 0) {
-    dataProducts.innerHTML = "<li>¡No hay productos!</li>";
-  } else {
-    let html = "";
-    for (const oneProduct of products) {
-      html += renderOneProducts(oneProduct);
-    }
-    dataProducts.innerHTML = html;
-  }
-}
-
+/*
+function renderOneProducts(oneProducts) {
+  const html = `
+  <li class="products"> 
+    <img
+      src="${oneProducts.image}"
+      alt="Imagen del producto"
+      class="products-image"/>
+    <h3 class="products-title">${oneProducts.title}</h3>
+    <p class="products-price">${oneProducts.price}</p>
+    <button class="btn-add-product-to-cart">Comprar</button>
+  </li> `;
+  return html;
+}*/
 
 //Filtrar por nombre
 function filterProductsByName(searchText) {
@@ -43,7 +45,7 @@ function filterProductsByName(searchText) {
   }
 
  // Renderizar los productos con botón dinámico
-  /*function renderOneProducts(oneProduct) {
+  function renderOneProducts(oneProduct) {
     const isInCart = cart.find((item) => item.id === oneProduct.id);
   
     const buttonClass = isInCart ? "added" : "";
@@ -63,7 +65,7 @@ function filterProductsByName(searchText) {
         </button>
       </li>
     `;
-  }*/
+  }
 
 //Renderizar el carrito
   function renderCart() {
