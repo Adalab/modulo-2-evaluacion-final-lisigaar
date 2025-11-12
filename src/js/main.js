@@ -43,7 +43,7 @@ function filterProductsByName(searchText) {
   }
 
  // Renderizar los productos con botón dinámico
-  function renderOneProducts(oneProduct) {
+  /*function renderOneProducts(oneProduct) {
     const isInCart = cart.find((item) => item.id === oneProduct.id);
   
     const buttonClass = isInCart ? "added" : "";
@@ -63,7 +63,7 @@ function filterProductsByName(searchText) {
         </button>
       </li>
     `;
-  }
+  }*/
 
 //Renderizar el carrito
   function renderCart() {
