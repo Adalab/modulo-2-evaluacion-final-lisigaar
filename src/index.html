@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AdaStore</title>
-
     <link rel="stylesheet" href="./scss/main.scss" />
   </head>
   <body>
@@ -13,7 +12,6 @@
     </header>
 
     <main class="main">
-
       <section class="search-products">
         <form class="form">
           <input
@@ -22,18 +20,21 @@
             id="searchInput"
             placeholder="Escribe el nombre del producto..."
           />
-          <button class="js_search_button" type="submit" id="searchButton">Buscar</button>
+          <button class="js_search_button" type="submit" id="searchButton">
+            Buscar
+          </button>
         </form>
       </section>
-
 
       <section class="cart">
         <h2>🛒 Carrito</h2>
         <ul class="js_cart_list">
           <li>Tu carrito está vacío</li>
         </ul>
+        <button class="js_delete_car btn-delete-car" id="deleteCar">
+          Vaciar carrito
+        </button>
       </section>
-    
 
       <section class="data-products">
         <ul class="list js_data_products">
@@ -45,7 +46,6 @@
     <footer class="footer">
       <h3 class="subtittle">&copy;AdaStore 💛 2025</h3>
     </footer>
-
     <script src="./js/main.js"></script>
   </body>
 </html>
