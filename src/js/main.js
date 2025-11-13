@@ -14,7 +14,6 @@ let cart = [];
 
 //FUNCIONES
 
-
 /*
 function renderOneProducts(oneProducts) {
   const html = `
@@ -26,7 +25,7 @@ function renderOneProducts(oneProducts) {
     <h3 class="products-title">${oneProducts.title}</h3>
     <p class="products-price">${oneProducts.price}</p>
     <button class="btn-add-product-to-cart">Comprar</button>
-  </li> `;
+  </li> `; 
   return html;
 }*/
 
@@ -137,8 +136,6 @@ function filterProductsByName(searchText) {
     }
   }
 
-  
-
 //EVENTOS
 
 //Click para filtrar por el título en el input
@@ -155,6 +152,7 @@ searchButton.addEventListener("click", (event) => {
       filterProductsByName(searchValue);
     }
   });
+  
 
 //ACCIONES AL CARGAR LA PÁGINA
 

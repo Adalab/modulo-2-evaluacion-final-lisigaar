@@ -1,8 +1,7 @@
 // src/scss/main.scss
-
-@import 'variables'; // Importar colores
-@import 'reset';    // Importar reset
-
+@use "sass:color";
+@use 'variables' as *; 
+@use 'reset' as *;
 * {
     box-sizing: border-box;
     margin: 0;
@@ -29,7 +28,6 @@
   
     h1 {
       font-size: 2.2rem;
-      font-weight: 700;
       letter-spacing: 1px;
     }
   }
@@ -57,7 +55,9 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 1.5rem;
-  
+   
+
+   
     .form {
       display: flex;
       gap: 0.5rem;
@@ -67,7 +67,6 @@
   
     .search-input {
       padding: 0.7rem 1rem;
-      width: 300px;
       border: 2px solid $primary-color;
       border-radius: 8px;
       font-size: 1rem;
@@ -85,7 +84,7 @@
       transition: background-color 0.2s ease;
   
       &:hover {
-        background-color: darken($primary-color, 10%);
+        background-color: color.adjust($primary-color, $lightness: -10%);
       }
     }
   }
@@ -194,7 +193,7 @@
         transition: background-color 0.2s ease;
   
         &:hover {
-          background-color: darken($secondary-color, 10%);
+          background-color: color.adjust($secondary-color, $lightness: -10%);
         }
   
         &.added {
@@ -216,7 +215,7 @@
     transition: all 0.2s ease;
   
     &:hover {
-      background-color: darken($secondary-color, 10%);
+      background-color: color.adjust($secondary-color, $lightness: -10%);
     }
   
     &.added {
@@ -256,4 +255,7 @@
     .data-products {
       order: 3;
     }
+
   }
+
+ 
